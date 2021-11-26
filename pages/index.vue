@@ -1,0 +1,71 @@
+<style>
+p{
+	text-align: justify;
+	font-size: 12pt;
+}
+#font{
+font-size: 16px;
+  color: black;
+  font-family: Georgia, serif;
+  letter-spacing: 0.6px;
+  word-spacing: 1.4px;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+}
+
+#parra{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+letter-spacing: -1.2px;
+word-spacing: 2.2px;
+color: #000000;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+</style>
+
+<template>
+ <div class="container">
+   <HeaderView/>
+	<img src="data:image/png;base64,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" width="50%" style="margin-left: 185px;">
+	<br><br> <p id=font> <strong>Michelin Guide</strong></p>
+	
+	<p id=parra>In 1900, there were fewer than 3,000 cars on the roads of France. To increase the demand for cars and, accordingly, car tyres, car tyre manufacturers and brothers Édouard and André Michelin published a guide for French motorists, the Michelin Guide.Nearly 35,000 copies of this first, free edition of the guide were distributed. It provided information to motorists, such as maps, tyre repair and replacement instructions, car mechanics listings, hotels, and petrol stations throughout France. In 1904, the brothers published a guide for Belgium similar to the Michelin Guide. Michelin subsequently introduced guides for Algeria and Tunisia (1907); the Alps and the Rhine (northern Italy, Switzerland, Bavaria, and the Netherlands) (1908); Germany, Spain, and Portugal (1910); the British Isles (1911); and "The Countries of the Sun" (Les Pays du Soleil) (Northern Africa, Southern Italy and Corsica) (1911). In 1909, an English-language version of the guide to France was published. Following the usage of the Murray's and Baedeker guides, the guide began to award stars for fine dining establishments in 1926. Initially, there was only a single star awarded. Then, in 1931, the hierarchy of zero, one, two, and three stars was introduced.</p>
+	
+	
+ <p id=font>	<strong>Finally, in 1936, the criteria for the starred rankings were published:</strong> </p>
+	<p id=parra>Finally, in 1936, the criteria for the starred rankings were published:
+<p>
+	<img src="/images/restaurante/michelin1.png"alt="" width="20%" > 
+	<p id=parra>1 star : "A very good restaurant in its category" (Une très bonne table dans sa catégorie)</p>
+	</p>
+ <img src="/images/restaurante/michelin2.png"
+     alt="" width="30%" > 
+	<p id=parra>2 stars : "Excellent cooking, worth a detour" (Table excellente, mérite un détour)
+</p>
+
+<img src="/images/restaurante/michelin3.png"
+     alt="" width="40%" > 
+	<p id=parra>3 stars : "Exceptional cuisine, worth a special journey" (Une des meilleures tables, vaut le voyage).</p>
+	</p>
+	<utteranc/>
+	
+   <FooterView/>
+ </div>
+</template>
+
+<script>
+export default {
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
+};
+</script>
