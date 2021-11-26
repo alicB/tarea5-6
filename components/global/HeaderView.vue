@@ -30,7 +30,7 @@
     <H1 id="jazz"><img src="/images/got.png" width="240px"></H1>
     <div class="row c"  style="margin-top: 15px;">  
       <NuxtLink class="a" to="/">Home</NuxtLink> 
-      <NuxtLink class="b" to="/restaurante_index">Restaurante</NuxtLink>
+      <NuxtLink class="b" to="/restaurante_index">Restaurants with three stars</NuxtLink>
     </div>
   </div>
 </template>
